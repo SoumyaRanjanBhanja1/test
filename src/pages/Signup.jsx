@@ -15,15 +15,10 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (!form.name || !form.email || !form.password || !form.confirmPassword) {
+    if (!form.name || !form.email || !form.password) {
       toast.error("All fields are required!");
       return;
     }
-    if (form.password !== form.confirmPassword) {
-      toast.error("Passwords do not match!");
-      return;
-    }
-
     setLoading(true);
     try {
       await axios.post("/signup", form);

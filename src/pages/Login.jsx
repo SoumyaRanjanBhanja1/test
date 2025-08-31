@@ -17,7 +17,7 @@ const Login = () => {
       const { data } = await axios.post("/login", form);
       localStorage.setItem("token", data.token);
       alert("Login successful!");
-      navigate("/Dashboard");
+      navigate("/dashboard");
     } catch (err) {
       alert(err.response?.data?.message || "Invalid credentials");
     }

@@ -13,10 +13,12 @@
     "@auth0/auth0-react": "^2.4.0",
     "axios": "^1.11.0",
     "framer-motion": "^12.23.12",
+    "lucide-react": "^0.542.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-router-dom": "^7.8.2",
-    "react-toastify": "^11.0.5"
+    "react-toastify": "^11.0.5",
+    "recharts": "^3.1.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.33.0",
